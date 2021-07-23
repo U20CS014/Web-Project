@@ -1,0 +1,155 @@
+<html>
+<head>
+  <title>Battle Royale</title>
+  <link rel="stylesheet" href="category.css">
+</head>
+<body> 
+
+<!-- Main Div for background -->
+<div class="wrapper">
+
+<!-- Div for slideshow of games -->
+<div class="slideshow">
+  <div class="mySlides fade">
+    <img src="Images/cod.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/forza.png" style="width:100%">  
+  </div>
+  <div class="mySlides fade"> 
+    <img src="Images/spidey.jpeg" style="width:100%">   
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/gta5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade"> 
+    <img src="Images/rl.jpeg" style="width:100%">
+  </div>
+</div>
+
+<!-- Left column for switching between category of games --> 
+<table>
+  <tr>
+    <td ><a href="action.html"> ACTION & SHOOTING </a></td>
+  </tr>  
+  <tr> 
+    <td > <a href="racing.html"> RACING </a></td>
+  </tr>
+  <tr>
+    <td > <a href="arcade.html"> ARCADE </a></td>
+  </tr>
+  <tr>
+    <td > <a href="battleroyale.html">BATTLE ROYALE</a></td>
+  </tr>
+  <tr>
+    <td  > <a href="fantasy.html"> FANTASY</a></td>
+  </tr>
+  <tr>
+    <td ><a href="horror.html">HORROR</a></td>
+  </tr>
+  <tr>
+    <td > <a href="puzzles and classics.html"> PUZZLES & CLASSICS </a></td>
+  </tr>
+</table>
+
+<!-- Heading , Home page icon , Cart icon -->          
+<img id= "head" src="Images/heading.png">
+<a href="Main.html"> <img id="house" src="Images/house.png"> </a>
+<a href="https://www.youtube.com/watch?v=c2OTHeCKsBE"> <img id="cart" src="Images/shoppingcart"> </a>
+<h6 style="color:rgb(185, 253, 253);"> THE RIGHT BYTE! </h6>
+
+<!-- Description for all games -->
+<h5 style="color:rgb(253, 253, 253); position: relative; right: -572px; top: -400px;">
+  <b style="color:rgb(155, 253, 253)"><i>Apex Legends</i></b><br><br>
+  A hero battle royale game<br>developed & published by <br>Respawn Entertainment.<br><br>
+  <a style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=ChZaqqoNg-0">Trailer</a>
+  <br><br>₹869<br>Add to Cart!  
+</h5>                         
+<h5 style="color:rgb(253, 253, 253); position: relative; right: -570px; top: -830px;">
+  <b style="color:rgb(155, 253, 253)"><i>Fortnite</b></i><br><br>
+  A 100 player battle royale <br> video game developed by<br> Epic Games. <br><Br>
+  <a  style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=wGB1aLDR2Es">Trailer<br><br></a>₹925
+  <br>Add to Cart!
+</h5>
+<h5 style="color:rgb(255, 255, 255); position: relative; right: -915px; top: -1014px;">
+  <b style="color:rgb(155, 253, 253)"><i>PUBG</b></i> <br><br>
+  An online multiplayer battle <br> royale game developed by<br> PUBG Corporation. <br><br>
+  <a style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=6FAldb21s2E">Trailer</a>
+  <br><br>₹899 <br>Add to Cart!  
+</h5>
+<h5 style="color:rgb(255, 255, 255); position: relative; right: -1250px; top: -1196px;">
+  <b style="color:rgb(155, 253, 253)"><i>Call Of Duty:Warzone</b></i><br><br>
+  An online multiplayer battle <br> royale game developed by<br> Activision. <Br><br>
+  <a style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=tzFfvaKNUX4">Trailer</a>
+  <br><br>₹1125<br>Add to Cart!  
+</h5>
+<h5 style="color:rgb(253, 253, 253); position: relative; right: -915px; top: -1129px;">
+  <b style="color:rgb(155, 253, 253)"><i>Hyperscape</b></i><br><br>
+  A first-person shooter battle<br> royale game developed by <br>Ubisoft Montreal. <br><br>
+  <a style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=w5zZb5Cfcq8">Trailer</a>
+  <br><br>₹750 <br>Add to Cart!  
+</h5>
+<h5 style="color:rgb(253, 253, 253); position: relative; right: -1250px; top: -1310px;">
+  <b style="color:rgb(155, 253, 253)"><i>Spellbreak</i></b><br><br>
+  A class-based third-person<br> shooter video game developed by<br> Proletariat.<br><br>
+  <a style="color:rgb(252, 62, 71)" href="https://www.youtube.com/watch?v=6Qx7Y1cSUoM">Trailer</a>
+  <br><br>₹599 <br>Add to Cart!  
+</h5>
+
+<!-- Pictures for all games  -->
+<img class="game1" src="Images/fortnite-vertical.jpg">
+<img class="game2" src="Images/PUBG-vertical.jpg">
+<img class="game3" src="Images/warzone-vertical.jpg">
+<img class="game4" src="Images/apex-vertical.png">
+<img class="game5" src="Images/spellbreak-vertical.jpg">
+<img class="game6" src="Images/hyperscape-vertical.png">  
+
+<!-- Div for dots below slideshow -->
+<div style="text-align:center">
+ <span class="dot"></span> 
+ <span class="dot"></span> 
+ <span class="dot"></span> 
+ <span class="dot"></span> 
+ <span class="dot"></span> 
+</div>
+
+<!-- Function for the simultaneous change of pictures in slideshow & dots -->
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<!-- Div for squares boxes in background -->
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</div>       
+        
+</body> 
+</html>

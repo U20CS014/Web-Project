@@ -1,0 +1,136 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style> 
+  input[type=text]{
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    opacity: 0.4;
+    background-color: rgb(185, 253, 253);
+  }
+  input[type=text]:focus{
+    width: 83%;
+    opacity: 0.8;
+    background-color: rgb(185, 253, 253);
+  }
+  </style>
+  <title> Teched Gaming </title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>     
+
+<!-- Main Div for background -->  
+<div class="wrapper">
+
+<!-- Cart icon , Heading -->
+<a href="https://www.youtube.com/watch?v=c2OTHeCKsBE"> <img id="cart" src="Images/shoppingcart"> </a>
+<img id= "head" src="Images/heading.png">
+
+<!-- Search Bar -->
+<form id ="form">
+  <input type="text" name="search" placeholder="Search Games..">
+</form>
+
+<!-- Secondary Headings -->
+<h6 style="color:rgb(185, 253, 253);"> THE RIGHT BYTE! </h6>
+<h5 style="color:rgb(185, 253, 253);"> CATEGORIES </h5>
+
+<!-- Left column for switching between category of games -->
+<table >
+  <tr>
+    <th> <a href="action.html"> ACTION & SHOOTING </a></th>
+  </tr>  
+  <tr> 
+    <th> <a href="racing.html"> RACING </a></th>
+  </tr>
+  <tr>
+    <th> <a href="arcade.html"> ARCADE </a></th>
+  </tr>
+  <tr>
+    <th> <a href="battleroyale.html"> BATTLE ROYALE</a></th>
+  </tr>
+  <tr>
+    <th> <a href="fantasy.html"> FANTASY</a></th>
+  </tr>
+  <tr>
+    <th><a href="horror.html">HORROR</a></th>
+  </tr>
+  <tr>
+    <th> <a href="puzzles and classics.html"> PUZZLES & CLASSICS </a></th>
+  </tr>
+</table>
+
+<!-- Div for slideshow of games --> 
+<div class="slideshow">
+  <div class="mySlides fade">
+    <img src="Images/cod.jpg" style="width:100%">  
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/forza.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/gta5.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/rl.jpeg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="Images/spidey.jpeg" style="width:100%">  
+  </div>
+</div>
+
+<!-- Div for dots below slideshow -->
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<!-- Function for the simultaneous change of pictures in slideshow & dots -->
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<!-- Div for squares boxes in background -->
+<div class="box">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</div>
+              
+</body> 
+</html>
